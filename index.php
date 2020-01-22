@@ -15,14 +15,14 @@
 <form method="post">
 <table>
 <?php 
-$files1 = scandir('problems');
-foreach ($files1 as $k => $filename) {
+$files = scandir('problems');
+for ($i = 2; $i < count($files); $i++) {
     ?>
-    <p>
-    <?php echo $filename ?>
-    <input type="text" name="param">
-    <input type="submit" name="Go" value="<?php echo $filename?>">
-    </p>
+    <tr>
+    <td><?php echo $files[$i] ?></td>
+    <td><input type="text" name="param"></td>
+    <td><input type="submit" name="Go" value="<?php echo $filename?>"></td>
+    </tr>
     <?php 
 }
 ?>
