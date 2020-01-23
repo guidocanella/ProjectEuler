@@ -15,3 +15,5 @@ function fiboEvenSum(n) {
     }
     return s;
 }
+
+function main(n) { return fiboEvenSum(n);}
