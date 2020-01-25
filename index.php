@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="lib/math.js"></script>
 <?php if (isset($_GET['js'])) { 
     foreach ($_GET as $k => $v) $_GET[$k] = urldecode($v); ?>
 	<script src="problems/<?php echo $_GET['js'].'.js'?>"></script>
