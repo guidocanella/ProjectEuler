@@ -14,7 +14,7 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$('#<?php echo $_GET['js']?>').val('<?php echo $_GET['p']?>');
-		$('#<?php echo $_GET['js']?>_res').html(main(<?php echo $_GET['p']?>));
+		$('#<?php echo $_GET['js']?>_res').html(main('<?php echo $_GET['p']?>'));
 	});
 	</script>
 
