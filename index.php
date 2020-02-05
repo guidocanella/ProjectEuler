@@ -27,7 +27,7 @@
 <table>
 <?php 
 $files = scandir('problems');
-for ($i = 2; $i < count($files); $i++) {
+for ($i = count($files)-1; $i>1 ; $i--) {
     $filename = explode('.', $files[$i])[0];
     ?>
     <tr>
