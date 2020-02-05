@@ -1,6 +1,6 @@
 function largeSum(arr) {
-  let s = arr.reduce((sum,term)=>sum += parseInt(term.substring(0,12)),0);
-  return Math.floor(s/100);
+	let s = arr.reduce((sum,term,curr)=>sum += parseInt(term.substring(0,12)),0);
+	return parseInt(s.toString().substring(0,10));
 }
 
 const testNums = [
